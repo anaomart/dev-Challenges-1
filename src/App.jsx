@@ -1,11 +1,10 @@
-import img from './404-not-found-master/404-not-found-master/Scarecrow.png'
 import "./App.css"
+import MyTeamPage from "./components/MyTeamPage";
 import NotFoundPage from './components/NotFoundPage';
 function App() {
   return (
-    <div className="Appo">
-      <NotFoundPage/>
-
+    <div className="App">
+      <MyTeamPage/>
     </div>
   );
 }

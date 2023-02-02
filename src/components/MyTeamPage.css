@@ -1,0 +1,106 @@
+.MyTeamPage {
+  padding: 50px 200px;
+}
+.MyTeamPage .text {
+  /* padding: 0 50px; */
+  display: flex;
+  justify-content: space-between;
+}
+.MyTeamPage .text h2 {
+  font-family: "PT Serif";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+}
+.MyTeamPage .text h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+}
+.MyTeamPage .text p {
+  width: 350px;
+  line-height: 27px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.cards {
+  
+ display:flex;
+ flex-wrap: wrap;
+ gap:50px;
+  transform: translateX(50px)
+}
+.card {
+  position: relative;
+  margin:40px;
+  width: 200px;
+}
+.cards .card img {
+  height: 350px;
+}
+.cards .card span {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+.cards .card::before {
+  content: attr(data-job);
+  font-family: "PT Serif";
+  font-style: normal;
+  position: absolute;
+  right: -60px;
+  top: 0;
+  font-weight: 600;
+  font-size: 12px;
+  writing-mode: vertical-lr;
+  text-transform: uppercase;
+}
+.down{
+    
+    transform: translateY(100px)
+}
+@media (max-width: 750px) {
+    .MyTeamPage {
+        padding: 50px ;
+      }
+  
+    .cards{
+        justify-content: space-between;
+        transform: translateX(-50px)
+
+    }
+    .card {
+       width:50px;
+    }
+    .cards .card img {
+        height:150px;
+    }
+    .down {
+        transform: translateY(0)
+    }
+    .card:nth-child(even) {
+        transform: translateY(70px)
+
+    }
+   .cards .card span {
+    font-size:10px;
+    line-height:0px;
+    width:100%;
+   }
+   .cards .card::before {
+    font-size:10px;
+    right: -65px;
+}
+    .MyTeamPage .text {
+        flex-direction: column;
+        width: 100%;
+      }
+      .MyTeamPage .text h3 {
+        width: 100%
+      }
+}
