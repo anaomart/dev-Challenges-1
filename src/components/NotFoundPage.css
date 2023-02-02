@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700&display=swap');
+nav {
+    font-family: 'Inconsolata';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 25px;
+margin: 20px 50px;
+}
+
+.NotFoundPage {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 100px;
+  margin: 0 auto;
+  height: 100vh;
+}
+.NotFoundPage .image {
+  /* width: 50%; */
+}
+.NotFoundPage .image img {
+    padding: 20px 50px;
+    width: 600px;
+}
+.NotFoundPage h1 {
+  font-size: 56px;
+  width: 80%;
+  word-spacing: 20px;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95px;
+}
+.NotFoundPage p {
+  word-spacing: 5px;
+  width: 300px;
+  height: 108px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+}
+.NotFoundPage button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 20px 60px;
+  margin: 30px 0;
+}
+@media (max-width: 950px) {
+    .NotFoundPage .image img {
+        padding:  50px;
+        width: 500px;
+    }
+  .NotFoundPage {
+    flex-direction: column;
+  }
+  .NotFoundPage h1 {
+    font-size: 48px;
+    word-spacing: 3px;
+    line-height:70px;
+  }
+}
