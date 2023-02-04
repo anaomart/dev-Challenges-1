@@ -1,0 +1,236 @@
+html{
+    font-size: 10px;
+}
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+.interiorPage {
+    background-color:black;
+    height:100svh;
+    color:white;
+    padding:  2.5rem 5rem;
+    width:100wv
+}
+/* Header */
+.interiorPage .header {
+    display :flex;
+    justify-content:space-between;
+    align-items:center;
+    height: 6rem;
+}
+.interiorPage .headerButton {
+    font-family: 'Crimson Pro';
+    background-color:transparent;
+    color:white;
+    padding:0 2rem;
+    height: 4rem;
+    outline-color:transparent;
+    border-color:white;
+    transition : 0.3s;
+    font-size:1.4rem;
+    font-weight:200;
+    cursor:pointer;
+
+}
+.interiorPage .headerButton:hover {
+    color:black;
+    background-color:white;;
+}
+nav{
+    width:40%;
+}
+.nav {
+    font-size:1.8rem;
+    width: 100%;
+    display:flex;
+    justify-content:space-around;
+}
+.nav li {
+    list-style-type:none;
+
+}
+.nav li a {
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    padding:0.5rem;
+    border-bottom:0px solid white;
+    position:relative;
+}
+.nav li a:after{
+    content:"";
+    background:white;
+    width:0;
+    height:2px;
+    position:absolute;
+    left:0;
+    bottom:0.1rem;
+    transition:all 0.3s;
+}
+.nav li a:hover:after {
+    width:100%;
+}
+.hamburgerIcon {
+    font-size:4rem;
+    display:none;
+    cursor:pointer;
+}
+/* main Section  */
+@media (max-width:1000px) {
+    html{
+        font-size:7px;
+    }
+    .mainSection {
+        margin: 0 auto;
+        width:100wv;
+        flex-direction:column;
+        justify-content:center;
+    }
+    .text {
+        padding: 0 2.5rem;
+    }
+    .imageSection {
+        margin:0 auto ;
+    }
+    .mainNav {
+        display:none;
+    }.hamburgerIcon {
+display:block    }
+    
+}
+@media (max-width:500px) {
+    html{
+        font-size:4.5px
+    }
+    .text {
+        padding: 0 0rem;
+    }
+    .mainSection {
+        flex-direction:column;
+    }
+   
+}
+
+.mainSection {
+    padding:50px 0;
+    display:flex;
+}
+.mainSection .text {
+    /* width:50%; */
+}
+.mainSection .text h2 {
+    font-family: 'Lora';
+    font-size:4.8rem;
+    font-weight:500;
+    line-height:2rem;
+    padding:2rem 0;
+    margin: 4rem 0;
+}
+.mainSection .text p {
+    font-family: 'Montserrat';
+    font-weight:400;
+    font-size:2.4rem;
+    line-height:3rem;
+    padding:3rem 21rem 3rem 0;
+    
+}
+.mainSection .text .mainButton {
+    display:flex;
+    align-items:center;
+}
+.mainSection .text button {
+    cursor:pointer;
+    background-color: transparent;
+    color:white;
+    border:none;
+    font-weight:bold;
+}
+.mainSection .text .arrow {
+    font-size :3rem;
+    margin:1rem;
+    cursor:pointer;
+}
+.imageSection {
+    /* width:50%; */
+    position:relative;
+}
+.imageSection .mainImage {
+    width:70rem;;
+}
+.imageSection .card {
+    width:40rem;
+    background:black;
+    position:absolute;
+    bottom:-7rem;
+    right:7rem;
+    padding:2rem 4rem;
+}
+.imageSection .card .info {
+    display:flex;
+    align-items:center;
+    height:50%;
+}
+.imageSection .card .info img {
+    width:8rem;
+    border-radius:50%;
+    margin:2rem 2rem 2rem 0;
+}
+.imageSection .card .info .name {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1.4rem;
+line-height: 1.7rem;
+margin: 0.2rem 0;
+
+}
+.imageSection .card .info span {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 1.2rem;
+line-height: 1.5rem;
+color:grey;
+margin: 1rem 0;
+}
+.card > p {
+    font-family: 'Lora';
+font-style: normal;
+font-weight: 700;
+font-size: 2.4rem;
+line-height: 31px;
+
+}
+/* mobile nav */
+
+.navOverlay {
+    flex-direction: column;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5rem;
+    transition: 1s;
+}
+.x {
+    z-index:100;
+    color:white;
+cursor:pointer    ;
+top:0;
+position: absolute;
+right:0;
+padding:8rem;
+/* background-color:red; */
+}
+@media (min-width: 994px) {
+    .navOverlay {
+        display:none;
+    }
+}
