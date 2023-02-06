@@ -1,5 +1,5 @@
 import React from 'react'
-import './RecipePage.css'
+// import './RecipePage.css'
 import mainImage from '../recipe-page-master/photo1.png'
 import forkAndSpoon from '../recipe-page-master/fork-and-spoon.svg'
 import clockIcon from '../recipe-page-master/clock-1-svgrepo-com.svg'

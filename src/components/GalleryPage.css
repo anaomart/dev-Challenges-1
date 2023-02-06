@@ -1,0 +1,129 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+html {
+    font-size:10px;
+}
+@media (max-width:768px) {
+    html{
+        font-size:8px;
+    }
+    .galleryPage{
+        padding:4rem 8rem;
+    }
+}
+@media (max-width:500px) {
+    html{
+        font-size:6px;
+    }
+    .galleryPage{
+        padding:3rem 5rem;
+    }
+}
+.galleryPage {
+    padding: 5rem 10rem;
+}
+/* Start profile Card */
+.galleryPage .card {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.galleryPage .card .info {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+.galleryPage .card .info img {
+    width: 25%;
+    border-radius:15px;
+}
+.galleryPage .card h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    padding: 1.5rem 0 1rem;
+    color: #4E5150;
+}
+.galleryPage .card .info span {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 1.4rem;
+/* line-height: 1.7rem; */
+color: #A9A9A9;
+}
+.galleryPage .card .info-numbers {
+    display:flex;
+    gap:3rem;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:1rem 0;
+}
+.galleryPage .card .info-numbers > div {
+    background: #E5E5E5;
+    padding: 1.8rem 2.5rem;;
+    border-radius:1.2rem;
+}
+.galleryPage .card .info-numbers >div p {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 1.8rem;
+line-height: 2.2rem;
+text-align: center;
+
+color: #4E5150;
+}
+.galleryPage .card .info-numbers >div span{
+    
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 1.4rem;
+line-height: 1.7rem;
+text-align: center;
+}
+/* End profile Card */
+/* Start Gallery  */
+section {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr ;
+    gap:3rem;
+    grid-template-areas:"photo1 photo2 photo2" 
+    "photo3 photo3 photo4"
+    "photo5 photo6 photo4"
+}
+section img {
+    width: 100%;
+    border-radius:1.2rem;
+}
+
+section .photo1{
+    grid-area:photo1
+}
+
+section .photo2{
+    grid-area:photo2
+}
+section .photo3{
+    grid-area:photo3
+}
+section .photo4{
+    grid-area:photo4;
+}
+section .photo5{
+    grid-area:photo5
+}
+section .photo6{
+    grid-area:photo6
+}
+
+
+/* End Gallery  */
