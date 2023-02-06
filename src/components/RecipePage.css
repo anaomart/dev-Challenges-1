@@ -1,0 +1,167 @@
+html {
+  font-size: 10px;
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 5px;
+  }
+}
+@media (max-width: 700px) {
+    html {
+      font-size: 7px;
+    }
+}
+@media (max-width: 950px) {
+    html {
+      font-size: 8px;
+    }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  counter-reset: counter;
+}
+.RecipePage {
+  padding: 4rem 20rem;
+  display: flex;
+  flex-direction: column;
+    justify-content: center;
+}
+@media (max-width: 650px) {
+  .RecipePage {
+    padding: 3rem;
+  }
+}
+
+.RecipePage h1 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+}
+.RecipePage > p {
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  width: 50ch;
+  padding: 2rem;
+}
+/* info section */
+@media (max-width: 650px) {
+  .info-section {
+    flex-direction: column;
+  }
+}
+.info-section {
+  padding: 1rem 0;
+  display: flex;
+}
+.info-section-text {
+  padding: 3rem 0 0;
+  width: 85%;
+}
+.info-section-text h2 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  margin: 0 0 2rem 0;
+  color: #333333;
+}
+.info-section-text .ingredients > p {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  margin: 2rem 0;
+  color: #333333;
+}
+.info-section-text .ingredients div {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+
+.info-section-text .ingredients p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  width: 50ch;
+}
+/* instructions section */
+.instructions h2 {
+  margin: 2rem 0;
+}
+.instructions__step {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  position: relative;
+  padding: 2rem 6rem;
+}
+.instructions__step::before {
+  position: absolute;
+  counter-increment: counter;
+  content: counter(counter);
+  background-color: #f2994a;
+  padding: 1rem 1.5rem;
+  left: -1rem;
+  border-radius: 0.6rem;
+  color: white;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* Time section  */
+@media (max-width: 650px) {
+  .info-section-time {
+    order: -1;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+    }
+    .alone {
+        width: 100%;
+    }
+}
+.info-section-time {
+  padding :2rem;
+}
+
+.info-section-time__item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+.info-section-time__item img {
+  width: 3rem;
+}
+.info-section-time__item span {
+  color: #bdbdbd;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
+}
+.info-section-time__item p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  margin: 0.5rem 0;
+}

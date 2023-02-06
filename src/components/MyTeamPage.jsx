@@ -1,5 +1,5 @@
 import React from 'react'
-import './MyTeamPage.css'
+// import './MyTeamPage.css'
 import photo1 from '../my-team-page-master/my-team-page-master/photo1.png'
 import photo2 from '../my-team-page-master/my-team-page-master/photo2.png'
 import photo3 from '../my-team-page-master/my-team-page-master/photo3.png'

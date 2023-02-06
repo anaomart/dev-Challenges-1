@@ -1,6 +1,6 @@
 import React from 'react'
 import img from '../404-not-found-master/404-not-found-master/Scarecrow.png'
-import './NotFoundPage.css'
+// import './NotFoundPage.css'
 export default function NotFoundPage() {
   return (<div className='NotFound'>
   <nav>404 Not found

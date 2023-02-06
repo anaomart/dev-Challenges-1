@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './InteriorPage.css'
+// import './InteriorPage.css'
 import mainImage from '../interior-consultant-master/photo1.png'
 import cardImage from '../interior-consultant-master/photo2.png'
 import NavOverlay from './NavOverlay';
