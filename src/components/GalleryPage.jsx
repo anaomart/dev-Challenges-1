@@ -1,5 +1,5 @@
 import React from 'react'
-import './GalleryPage.css'
+// import './GalleryPage.css'
 import profileImage from '../my-gallery-master/profilePhoto.png'
 import profile1 from '../my-gallery-master/photo1.png'
 import profile2 from '../my-gallery-master/photo2.png'
