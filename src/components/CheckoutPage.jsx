@@ -31,22 +31,22 @@ export default function CheckoutPage() {
                         <input type='text' name='name' placeholder='Enter your name...' />
                     </label>
                     <label htmlFor='address'>Address
-                        <span className="material-symbols-outlined">
-                            home
-                        </span>
+                    <span class="material-symbols-rounded">
+home
+</span>
                         <input type='text' name='address' placeholder='Enter your Address...' />
                     </label>
                     <label htmlFor='city'>City
-                        <span className="material-symbols-outlined">
-                            apartment
-                        </span>
+                    <span class="material-symbols-rounded">
+apartment
+</span>
                         <input type='text' name='City' placeholder='Enter your city...' />
                     </label>
                     <div className='countryAndPostalcode'>
                         <label htmlFor='country'>Country
-                            <span className="material-symbols-outlined">
-                                language
-                            </span>
+                        <span class="material-symbols-rounded">
+language
+</span>
                             <select id="country" name="country" className="form-control">
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Åland Islands">Åland Islands</option>
@@ -67,9 +67,9 @@ export default function CheckoutPage() {
                             </select>
                         </label>
                         <label htmlFor='Postal code'>Postal code
-                            <span className="material-symbols-outlined">
-                                markunread_mailbox
-                            </span>
+                        <span class="material-symbols-rounded">
+markunread_mailbox
+</span>
                             <input type='text' name='Postal code' placeholder='Enter your Postal code...' />
                         </label>
                     </div>
